@@ -572,6 +572,12 @@ img {
   border: none;
   fill: white;
 }
+.x-close{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .button-close-style{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -604,9 +610,6 @@ img {
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(46, 47, 66, 0.4);
-}
-.form-input:focus{
-  border-color: #4d5ae5;
 }
 .form-style{
   font-family:"Roboto", sans-serif;
@@ -669,13 +672,13 @@ img {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-form:focus-within{
+  border-color: #4d5ae5;
+}
 .modal-form:focus-within .icon-svg{
   fill: #4d5ae5;
 }
-.form-input:focus-within{
-  border-color: #4d5ae5;
-}
-.form-input:focus-within .icon-svg{
+.form-input:focus{
   border-color: #4d5ae5;
 }
 .form-textarea{
@@ -715,24 +718,13 @@ img {
 .checkbox:active{
   background-color: #404bbf;
 }
-.checkbox-label{
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  padding: 0;
-  display: block;
-  margin-bottom: 4px;
-}
 .checkbox-input{
   font-family: inherit;
   Font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
-.checkbox-input:checked +.checkbox-label{
+.checkbox-input:checked +.form-style{
   border: none;
   fill: #fff;
   background-color: #404bbf;
