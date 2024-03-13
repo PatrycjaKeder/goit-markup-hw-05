@@ -732,10 +732,10 @@ img {
   line-height: 1.15;
   margin: 0;
 }
-.check-span:checked + .field-descr span {
-  background-color: #404bbf;
+.checkbox-input:checked + .checkbox-label{
   border: none;
   fill: #f4f4fd;
+  background-color: #404bbf;
 }
 .check-span{
   display: inline-flex;
@@ -751,6 +751,6 @@ img {
 .text-privacy{
   color:#4d5ae5;
 }
-.check {
+.checkbox-label{
   cursor: pointer;
 }
