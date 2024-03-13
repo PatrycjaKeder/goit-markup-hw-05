@@ -716,9 +716,9 @@ img {
   line-height: 1.15;
   margin: 0;
 }
-.checkbox-input:checked+.form-style{
+.checkbox-input:checked + .form-style span{
   border: none;
-  fill: #fff;
+  fill: #f4f4fd;
   background-color: #404bbf;
 }
 .check-span{
@@ -735,6 +735,6 @@ img {
 .text-privacy{
   color:#4d5ae5;
 }
-.checkbox-label{
+.check-span{
   cursor: pointer;
 }
